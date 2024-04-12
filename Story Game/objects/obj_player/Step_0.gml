@@ -19,7 +19,10 @@ calc_movement();
 
 if(can_shoot == true) {
 	if(keyboard_check(vk_space)){
-		instance_create_layer(x+10, y, "Projectiles", obj_axe);
+		
+		
+		
+		
 		can_shoot = false;
 		alarm[0] = shoot_timer;
 	}

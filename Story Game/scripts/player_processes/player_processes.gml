@@ -35,6 +35,8 @@ function calc_movement() {
 }
 
 
+
+
 function collision() {
 	var _tx = x;
 	var _ty = y;
@@ -58,3 +60,38 @@ function collision() {
 	}
 	
 }
+
+function weapon_throw()
+{
+	
+	var inst;
+
+	inst = instance_create_layer(x, y, "Instances", obj_axe); // Create the projectile object
+	inst.direction = point_direction(x, y, mouse_x, mouse_y); // Set the direction of the projectile towards the mouse cursor
+	
+	// get distance
+	var _hmove = lengthdir_x(bullet_speed, inst.direction);
+	var _vmove = lengthdir_y(bullet_speed, inst.direction);
+		
+	// add movement
+	x += _hmove;
+	y += _vmove;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
