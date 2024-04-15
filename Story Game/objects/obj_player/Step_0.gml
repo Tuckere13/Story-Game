@@ -9,14 +9,12 @@ get_input();
 calc_movement();
 
 
-/////////////// Collision /////////////////////////
+//////////////// Player Direction ///////////////////////
 
-
-
+direction = point_direction(x, y, mouse_x, mouse_y);
 
 //////////////// Shooting ////////////////////////////
-
-
+/*
 if(can_shoot == true) {
 	if(keyboard_check(vk_space)){
 		
@@ -28,23 +26,7 @@ if(can_shoot == true) {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 /*
