@@ -63,7 +63,7 @@ if (keyboard_check_direct(vk_shift)) {
 	
 	shielding = true;
 	
-	move_speed = 2;
+	move_speed = base_shield_speed;
 	// Sides
 
 	
@@ -98,7 +98,7 @@ if (keyboard_check_direct(vk_shift)) {
 	sprite_index = spr_player;
 	shielding = false;
 	
-	move_speed = 5;    // need to soft code this ***********************************************************************************************
+	move_speed = base_speed;    // need to soft code this ***********************************************************************************************
 } 
 
 
