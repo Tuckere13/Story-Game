@@ -1,0 +1,2 @@
+
+y -= bullet_speed;

@@ -14,45 +14,7 @@ calc_movement();
 direction = point_direction(x, y, mouse_x, mouse_y);
 
 //////////////// Shooting ////////////////////////////
-/*
-if(can_shoot == true) {
-	if(keyboard_check(vk_space)){
-		
-		
-		
-		
-		can_shoot = false;
-		alarm[0] = shoot_timer;
-	}
-	
-}
-*/
 
-
-/*
-if (can_shoot == true){
-	if (keyboard_check(vk_up)){
-		instance_create_layer(x, y, "Projectiles", obj_bullet_up);
-		can_shoot = false;
-		alarm[0] = shoot_timer;
-	}
-	else if (keyboard_check(vk_left)){
-		instance_create_layer(x, y, "Projectiles", obj_bullet_left);
-		can_shoot = false;
-		alarm[0] = shoot_timer;
-	}
-	else if (keyboard_check(vk_down)){
-		instance_create_layer(x, y, "Projectiles", obj_bullet_down);
-		can_shoot = false;
-		alarm[0] = shoot_timer;
-	}
-	else if (keyboard_check(vk_right)){
-		instance_create_layer(x, y, "Projectiles", obj_bullet_right);
-		can_shoot = false;
-		alarm[0] = shoot_timer;
-	}
-}
-*/
 
 //////////////// Add Attack ////////////////////////////
 
@@ -88,9 +50,58 @@ if(hearts = 0) and (armor_hearts = 0) {
 		alarm[1] = 240;
 	}
 	dying = false;
-	
-	
 }
+
+
+//////////////////////// Shielding /////////////////////
+
+// Blocking drection will be chosen based off player mouse direction.
+// if directly right then block right   (East)
+// if up right then block up and right  (North East)
+
+if (keyboard_check_direct(vk_shift)) {
+	
+	shielding = true;
+	
+	move_speed = 2;
+	// Sides
+
+	
+	if (direction >= 337.5 and direction < 360) or (direction >= 0 and direction < 22.5) {    // East
+		obj_player.sprite_index = spr_player_shield_east;
+	}
+	if (direction >= 67.5 and direction < 112.5) {           // North
+		obj_player.sprite_index = spr_player_shield_north;
+	}
+	if (direction >= 157.5 and direction < 202.5) {           // West
+		obj_player.sprite_index = spr_player_shield_west;
+	}
+	if (direction >= 247.5 and direction < 292.5) {           // South
+		obj_player.sprite_index = spr_player_shield_south;
+	}
+	
+	// Diagonals
+	
+	if (direction >= 22.5 and direction < 67.5) {           // North East
+		obj_player.sprite_index = spr_player_shield_north_east;
+	}
+	if (direction >= 112.5 and direction < 157.5) {           // West
+		obj_player.sprite_index = spr_player_shield_north_west;
+	}
+	if (direction >= 202.5 and direction < 247.5) {           // South
+		obj_player.sprite_index = spr_player_shield_south_west;
+	}
+	if (direction >= 292.5 and direction < 337.5) {           // South
+		obj_player.sprite_index = spr_player_shield_south_east;
+	}
+} else {
+	sprite_index = spr_player;
+	shielding = false;
+	
+	move_speed = 5;    // need to soft code this ***********************************************************************************************
+} 
+
+
 
 
 

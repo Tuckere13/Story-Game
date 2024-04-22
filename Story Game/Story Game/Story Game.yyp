@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"Zombie Rogue Like",
+  "%Name":"Story Game",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -37,8 +37,9 @@
   "MetaData":{
     "IDEVersion":"2024.2.0.132",
   },
-  "name":"Zombie Rogue Like",
+  "name":"Story Game",
   "resources":[
+    {"id":{"name":"obj_axe","path":"objects/obj_axe/obj_axe.yy",},},
     {"id":{"name":"obj_bullet_down","path":"objects/obj_bullet_down/obj_bullet_down.yy",},},
     {"id":{"name":"obj_bullet_left","path":"objects/obj_bullet_left/obj_bullet_left.yy",},},
     {"id":{"name":"obj_bullet_right","path":"objects/obj_bullet_right/obj_bullet_right.yy",},},
@@ -54,7 +55,6 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_poker_magazine","path":"objects/obj_poker_magazine/obj_poker_magazine.yy",},},
     {"id":{"name":"obj_sports_magazine","path":"objects/obj_sports_magazine/obj_sports_magazine.yy",},},
-    {"id":{"name":"obj_axe","path":"objects/obj_axe/obj_axe.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Pathfinding","path":"scripts/Pathfinding/Pathfinding.yy",},},
     {"id":{"name":"player_processes","path":"scripts/player_processes/player_processes.yy",},},
@@ -68,6 +68,7 @@
     {"id":{"name":"spr_pathfind_point","path":"sprites/spr_pathfind_point/spr_pathfind_point.yy",},},
     {"id":{"name":"spr_player_dead","path":"sprites/spr_player_dead/spr_player_dead.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_player_shield_east","path":"sprites/spr_player_shield_east/spr_player_shield_east.yy",},},
     {"id":{"name":"spr_poker_magazine","path":"sprites/spr_poker_magazine/spr_poker_magazine.yy",},},
     {"id":{"name":"spr_sports_magazine","path":"sprites/spr_sports_magazine/spr_sports_magazine.yy",},},
   ],

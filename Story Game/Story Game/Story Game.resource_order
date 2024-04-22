@@ -3,5 +3,6 @@
   "ResourceOrderSettings":[
     {"name":"obj_axe","order":1,"path":"objects/obj_axe/obj_axe.yy",},
     {"name":"spr_axe","order":1,"path":"sprites/spr_axe/spr_axe.yy",},
+    {"name":"spr_player_shield_east","order":1,"path":"sprites/spr_player_shield_east/spr_player_shield_east.yy",},
   ],
 }
