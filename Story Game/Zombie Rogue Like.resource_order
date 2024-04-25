@@ -1,0 +1,27 @@
+{
+  "FolderOrderSettings":[
+    {"name":"Map Objects","order":1,"path":"folders/Objects/Map Objects.yy",},
+    {"name":"Enemy Projectiles","order":1,"path":"folders/Objects/Projectiles/Enemy Projectiles.yy",},
+    {"name":"Map Sprites","order":2,"path":"folders/Sprites/Map Sprites.yy",},
+    {"name":"GUI","order":1,"path":"folders/Sprites/GUI.yy",},
+    {"name":"Player Shielding","order":9,"path":"folders/Sprites/Player Sprites/Player Shielding.yy",},
+    {"name":"Enemy Projectiles","order":2,"path":"folders/Sprites/Projectiles/Enemy Projectiles.yy",},
+  ],
+  "ResourceOrderSettings":[
+    {"name":"obj_axe","order":1,"path":"objects/obj_axe/obj_axe.yy",},
+    {"name":"obj_enemy_projectile_parent","order":1,"path":"objects/obj_enemy_projectile_parent/obj_enemy_projectile_parent.yy",},
+    {"name":"obj_map_path","order":1,"path":"objects/obj_map_path/obj_map_path.yy",},
+    {"name":"obj_shooter","order":1,"path":"objects/obj_shooter/obj_shooter.yy",},
+    {"name":"obj_map_manager","order":2,"path":"objects/obj_map_manager/obj_map_manager.yy",},
+    {"name":"rm_map","order":1,"path":"rooms/rm_map/rm_map.yy",},
+    {"name":"spr_axe","order":1,"path":"sprites/spr_axe/spr_axe.yy",},
+    {"name":"spr_map_path","order":1,"path":"sprites/spr_map_path/spr_map_path.yy",},
+    {"name":"spr_player_shield_north_east","order":2,"path":"sprites/spr_player_shield_north_east/spr_player_shield_north_east.yy",},
+    {"name":"spr_player_shield_north_west","order":3,"path":"sprites/spr_player_shield_north_west/spr_player_shield_north_west.yy",},
+    {"name":"spr_player_shield_north","order":1,"path":"sprites/spr_player_shield_north/spr_player_shield_north.yy",},
+    {"name":"spr_player_shield_south_east","order":5,"path":"sprites/spr_player_shield_south_east/spr_player_shield_south_east.yy",},
+    {"name":"spr_player_shield_south_west","order":6,"path":"sprites/spr_player_shield_south_west/spr_player_shield_south_west.yy",},
+    {"name":"spr_player_shield_south","order":4,"path":"sprites/spr_player_shield_south/spr_player_shield_south.yy",},
+    {"name":"spr_player_shield_west","order":7,"path":"sprites/spr_player_shield_west/spr_player_shield_west.yy",},
+  ],
+}
